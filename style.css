@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 50px;
+    gap: 70px;
+}
+
+#banner-left {
+    height: 100vh;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+}
+
+#banner-left h1 {
+    font-size: 9vw;
+    font-weight: 500;
+    line-height: 10vw;
+    font-family: "Work Sans", sans-serif;
+}
+
+#bottom-left {
+    padding-top: 66px;
+}
+
+#color {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: 1px solid #000;
+    height: 6vh;
+}
+
+#color h1 {
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+#color1, #color2 {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+#color1 {
+    background-color: brown;
+}
+
+#color2 {
+    background-color: rgb(182, 121, 52);
+    margin-left: 4px;
+}
+
+#bottom-left h2 {
+    margin-top: 50px;
+    font-size: 2vw;
+    margin-bottom: 10px;
+}
+
+#bottom-left p {
+    font-size: 1.4vw;
+    width: 70%;
+    font-weight: 550;
+    color: #444;
+    line-height: 1.4vw;
+}
+
+#banner-right {
+    height: 90vh;
+    width: 35vw;
+    position: relative;
+}
+
+#right-top {
+    height: 50px;
+    width: 80%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: -7%;
+}
+
+#right-top i {
+    color: gold;
+}
+
+#right-top h5 {
+    font-size: 16px;
+}
+
+#banner-right img {
+    width: 80%;
+    height: 88%;
+    object-fit: cover;
+}
+
+#black-circle {
+    height: 140px;
+    width: 140px;
+    background-color: #2c2929e0;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#black-circle h5 {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 20px 20px;
+}
+
+#rotated {
+    color: #2c2929e0;
+    font-size: 18px;
+    position: absolute;
+    left: -6%;
+    bottom: 22%;
+    rotate: -90deg;
+    transform-origin: 0 0;
+}
+
+@media (max-width: 600px) {
+    #main {
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 40px;
+        gap: 70px;
+    }
+
+    #banner-left {
+        height: fit-content;
+        width: 100%;
+        padding-top: 60px;
+    }
+
+    #banner-left h1 {
+        font-size: 19vw;
+        font-weight: 500;
+        line-height: 18vw;
+    }
+
+    #color {
+        height: 6vh;
+    }
+
+    #color h1 {
+        font-size: 3vw;
+        margin-right: 18px;
+    }
+
+    #bottom-left h2 {
+        font-size: 2vw;
+    }
+
+    #bottom-left p {
+        font-size: 4.4vw;
+        width: 100%;
+        line-height: 4.8vw;
+    }
+
+    #banner-right {
+        height: 100%;
+        width: 100%;
+        left: 10%;
+    }
+
+    #right-top {
+        font-size: 2vw;
+    }
+
+    #right-top h5 {
+        font-size: 2vw;
+    }
+
+    #banner-right img {
+        width: 80%;
+        height: 88%;
+    }
+
+    #black-circle {
+        height: 8vh;
+        width: 16vw;
+    }
+
+    #black-circle h5 {
+        font-size: 14px;
+    }
+
+    #rotated {
+        font-size: 2.8vw;
+        left: -8%;
+    }
+}
